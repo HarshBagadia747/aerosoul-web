@@ -5,8 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build-prod": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng build --configuration production --base-href https://HarshBagadia747.github.io/aerosoul-web/ && ngh --dir=dist/aerosoul-web/browser"
   },
   "private": true,
   "dependencies": {
@@ -31,6 +33,7 @@
     "@angular/compiler-cli": "^19.0.0",
     "@types/jasmine": "~5.1.0",
     "@types/leaflet": "^1.9.15",
+    "angular-cli-ghpages": "^2.0.3",
     "jasmine-core": "~5.4.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
