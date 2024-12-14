@@ -1,0 +1,11 @@
+<div class="search-container">
+    <mat-form-field appearance="fill" subscriptSizing="dynamic" hideRequiredMarker class="search-input-wrapper">
+        <input matInput type="text" [(ngModel)]="query" (keyup.enter)="searchQuery()" placeholder="Search for a city...">
+        <mat-icon matSuffix class="search-icon">search</mat-icon>
+    </mat-form-field>
+</div>
+<div class="map-container">
+    <div class="map-frame">
+        <div id="map"></div>
+    </div>
+</div>
