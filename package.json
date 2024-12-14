@@ -5,10 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build-prod": "ng build --configuration production",
+    "build-prod": "ng build --configuration production --base-href /aerosoul-web/",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "deploy": "ng build --configuration production --base-href https://HarshBagadia747.github.io/aerosoul-web/ && ngh --dir=dist/aerosoul-web/browser"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
