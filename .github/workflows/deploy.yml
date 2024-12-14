@@ -33,6 +33,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist/aerosoul-web
+          folder: dist/aerosoul-web/browser
           token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication
 
